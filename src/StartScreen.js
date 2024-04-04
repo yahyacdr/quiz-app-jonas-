@@ -1,4 +1,7 @@
-export default function StartScreen({ numQuestions, dispatch }) {
+import { usePosts } from "./components/PostProvider";
+
+export default function StartScreen() {
+  const { numQuestions, dispatch } = usePosts();
   return (
     <div className="start">
       <h2>Welcome to The REact Quiz!</h2>
